@@ -5,44 +5,133 @@
     box-sizing:border-box;
     vertical-align:top;
     outline: 1px red dotted;
-    font-size:1.5vw;
+    font-size:1.8vw;
     font-family:Arial, Helvetica, sans-serif
 }
 #header {
-    height:7vw;
+    height:5vw;
     background-color: #333333;
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width:100%;
     color:white;
+    padding: 0px 15%;
+
 }
-#header h1 {
-    font-size: 4vw;
-    display:inline-block;
+h1 {
+    font-size: 3vw;
 }
 #nav {
     display:flex;
     align-items: center;
 }
 #nav a {
-    color:lightgray;
+    color:#CCCCCC;
     text-decoration: none;
-    padding:1vw;
+    padding:1vw 2vw;
+    font-size:1.4vw;
 }
 #nav button {
     padding:.5vw 2vw;
     align-self:center;
     background-color:#14A3B8;
     color:white;
-    box-shadow: 5px 5px 5px black;
-    font-size:2vw;
+    box-shadow: 10px 10px 10px black;
+    font-size:1.8vw;
 }
 #container {
     min-height:80vw;
-    width:80%;
+    width:70%;
     margin: 2.5vw auto;
     display:flex;
     justify-content:space-between;
     align-items: start;
+}
+/* LEFT HAND SIDE */
+#left {
+    flex:2;
+}
+#blue_band {
+    height:9vw;
+    background-color:#14A3B8;
+}
+img[alt="profile pic"] {
+    border-radius: 50%;
+    height:9vw;
+    position:relative;
+    top:4.5vw;
+    left: 2.5vw;
+    border:#CCCCCC .3vw solid;
+}
+#user_info {
+    padding: 6vw 2.5vw 2.5vw 2.5vw;
+    margin-bottom:2.5vw;
+    border-left:#CCCCCC .3vw solid;
+    border-right:#CCCCCC .3vw solid;
+    border-bottom:#CCCCCC .3vw solid;
+}
+#user_info h1 {
+    margin-bottom:1vw;
+}
+img[alt="map-marker"] {
+    height:2vw;
+    margin-bottom:1.5vw;
+}
+#user_info p {
+    margin-bottom:1.3vw;
+}
+img[alt="gear icon"] {
+    height:2.2vw;
+}
+/* LEFT BOTTOM   */
+#education div {
+    border-left:#CCCCCC .3vw solid;
+    border-right:#CCCCCC .3vw solid;
+    border-bottom:#CCCCCC .3vw solid;
+}
+#education h4 {
+    background-color:#333333;
+    color:#CCCCCC;
+    padding:1vw 3vw;
+}
+#education h3 {
+    padding:1vw 3vw;
+    font-size:2.1vw;
+}
+#p1 {
+    color:gray;
+    padding:0vw 0vw 1vw 3vw;
+    /* font-size:2.1vw; */
+}
+#p2 {
+    /* color:#CCCCCC; */
+    padding:0vw 0vw 3vw 3vw;
+    /* font-size:2.1vw; */
+}
+/* RIGHT HAND SIDE */
+#right {
+    flex:1;
+    min-height:50vw;
+    margin-left: 2.5vw;
+}
+#requests {
+    border:#CCCCCC .3vw solid;
+
+}
+#requests h4 {
+    background-color:#333333;
+    color:#CCCCCC;
+    padding:1vw 3vw;
+}
+#requests h3 {
+    padding:1vw 3vw;
+    font-size:2.1vw;
+}
+
+/* RIGHT BOTTOM */
+
+#connections {
+    border:#CCCCCC .3vw solid;
+    
 }
