@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Making Connections</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="user_circle.png">
+    <link rel="icon" type="image/x-icon" href="icons/user_circle.png">
 </head>
 <body>
     <div id="header">
@@ -21,44 +21,68 @@
         <div id="container">
             <div id="left">
                 <!-- <div id="profile"> -->
-                    <div id="blue_band">
-                        <img src="images/jane-m.jpg" alt="profile pic">                        
-                    </div>
-                    <div id="user_info">
-                        <h1>Jane Doe</h1>
-                        <img src="icons/map-marker.png" alt="map-marker">
-                        <span>Seattle</span>
-                        <p>Developer | Engineer | Problem Solver<br>Master of Shadows and the Internet!</p>
-                        <img src="icons/gear.png" alt="gear icon">
-                        <a href="">edit profile</a>
-                    </div>
+                <div id="blue_band">
+                    <img src="images/jane-m.jpg" alt="profile pic">                        
+                </div>
+                <div id="user_info" class="gray_border">
+                    <h1>Jane Doe</h1>
+                    <img src="icons/map-marker.png" alt="map-marker">
+                    <span>Seattle</span>
+                    <p>Developer | Engineer | Problem Solver<br>Master of Shadows and the Internet!</p>
+                    <img src="icons/gear.png" alt="gear icon">
+                    <a href="#" onclick="changeName()">edit profile</a>
+                </div>
 
                 <!-- </div> -->
                 <div id="education">
                     <h4>Education</h4>
-                    <div>
+                    <div class="gray_border">
                         <h3>Coding Dojo - Full Stack Bootcamp</h3>
                         <p id="p1">Dec 2019 - Mar 2020</p>
                         <p id="p2">Triple Black Belt in Python, MERN, and C#...</p>                      
                     </div>
                 </div>
+            </div>
+            <div id="right">
+                <h4><span id="span1">2</span> Connection Requests</h4>
+                <div id="requests" class="gray_border">
+                    <h3 id="todd">
+                        <img src="images/todd-s.jpg" alt="todd">
+                        <span>Todd E</span> 
+                        <img src="icons/accept-circle.png" alt="accept" onclick="accept_reject('todd','accept')">
+                        <img src="icons/close-circle.png" alt="close" onclick="accept_reject('todd','reject')">
+                    </h3>
+                    <h3 id="phil">
+                        <img src="images/phil-s.jpg" alt="phil">
+                        <span>Phil K</span> 
+                        <img src="icons/accept-circle.png" alt="accept" onclick="accept_reject('phil','accept')">
+                        <img src="icons/close-circle.png" alt="close" onclick="accept_reject('phil','reject')">
+                    </h3>
                 </div>
-                 <div id="right">
-                    <div id="requests">
-                        <h4><span>2</span> Connection Rquests</h4>
-                        <h3>
-                            <img src="xxxx" alt="xxxx">
-                            Todd E
-                            <img src="xxxx" alt="xxxx">
-                            <img src="xxxx" alt="xxxx">
-                        </h3>
-                    </div>
-                    <div id="connections">
+                <h4><span id="span2">418</span>Your Connections</h4>
+                <div id="connections" class="gray_border">
+                    <h3>
+                        <img src="images/adrien-s.jpg" alt="adrien">
+                        <span>Adrien D</span> 
+                    </h3>
+                    <h3>
+                        <img src="images/anne-s.jpg" alt="anne">
+                        <span>Anne J</span> 
+                    </h3>
+                    <h3>
+                        <img src="images/alayne-s.jpg" alt="alayne">
+                        <span>Alayne T</span> 
+                    </h3>
+                    <h3>
+                        <img src="images/arry-s.jpg" alt="arry">
+                        <span>Arry Y</span> 
+                    </h3>
+                </div>
 
-                    </div>
+                <a href="#" class="gray_border">View More</a>
             </div>
         </div>
 
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>

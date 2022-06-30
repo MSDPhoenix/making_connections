@@ -4,20 +4,18 @@
     padding:0px;
     box-sizing:border-box;
     vertical-align:top;
-    outline: 1px red dotted;
     font-size:1.8vw;
     font-family:Arial, Helvetica, sans-serif
 }
 #header {
     height:5vw;
-    background-color: #333333;
     display:flex;
     align-items: center;
     justify-content: space-between;
     width:100%;
-    color:white;
     padding: 0px 15%;
-
+    color:white;
+    background-color: #333333;
 }
 h1 {
     font-size: 3vw;
@@ -41,7 +39,6 @@ h1 {
     font-size:1.8vw;
 }
 #container {
-    min-height:80vw;
     width:70%;
     margin: 2.5vw auto;
     display:flex;
@@ -67,6 +64,8 @@ img[alt="profile pic"] {
 #user_info {
     padding: 6vw 2.5vw 2.5vw 2.5vw;
     margin-bottom:2.5vw;
+}
+.gray_border {
     border-left:#CCCCCC .3vw solid;
     border-right:#CCCCCC .3vw solid;
     border-bottom:#CCCCCC .3vw solid;
@@ -85,11 +84,6 @@ img[alt="gear icon"] {
     height:2.2vw;
 }
 /* LEFT BOTTOM   */
-#education div {
-    border-left:#CCCCCC .3vw solid;
-    border-right:#CCCCCC .3vw solid;
-    border-bottom:#CCCCCC .3vw solid;
-}
 #education h4 {
     background-color:#333333;
     color:#CCCCCC;
@@ -102,36 +96,61 @@ img[alt="gear icon"] {
 #p1 {
     color:gray;
     padding:0vw 0vw 1vw 3vw;
-    /* font-size:2.1vw; */
 }
 #p2 {
-    /* color:#CCCCCC; */
     padding:0vw 0vw 3vw 3vw;
-    /* font-size:2.1vw; */
 }
 /* RIGHT HAND SIDE */
 #right {
-    flex:1;
-    min-height:50vw;
+    flex:1.1;
     margin-left: 2.5vw;
 }
+#right img {
+    height:3vw;
+    border-radius: 50%;
+}
 #requests {
-    border:#CCCCCC .3vw solid;
+    margin-bottom:2.5vw;
 
 }
-#requests h4 {
+#right h4 {
     background-color:#333333;
     color:#CCCCCC;
-    padding:1vw 3vw;
+    padding:1vw;
+    font-size:1.7vw;
+    display:flex;
+    justify-content: space-between;
 }
-#requests h3 {
-    padding:1vw 3vw;
+#span1, #span2 {
+    background-color:#CCCCCC;
+    color:#333333;
+    border-radius:50%;
+    width:2.2vw;
+    height:2.2vw;
+    display:inline-block;
+    text-align: center;
+}
+#span2 {
+    width:4.4vw;
+    margin-right:1vw;
+}
+#right h3 {
+    padding:1vw;
     font-size:2.1vw;
 }
-
+#right h3 span {
+    display:inline-block;
+    width: 10vw;
+    padding-top:.5vw;
+    padding-left:1vw;
+}
 /* RIGHT BOTTOM */
-
-#connections {
-    border:#CCCCCC .3vw solid;
-    
+#right a {
+    display:inline-block;
+    width:100%;
+    padding:1vw;
+}
+/* JAVASCRIPT CLASSES */
+.background_pink {
+    background-color: pink;
 }
