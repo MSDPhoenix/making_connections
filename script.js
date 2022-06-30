@@ -35,7 +35,7 @@ function number_change(value){
     let requests_number = Number(requests.innerText);
     requests_number --;
     requests.innerText = requests_number
-    
+
     const connections = document.getElementById('span2');
     let connections_number = Number(connections.innerText);
     if (value == 'accept') {
